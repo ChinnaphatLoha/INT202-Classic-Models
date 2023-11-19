@@ -1,0 +1,36 @@
+--- Folder Structure ---
+[src]
+    └── [main]
+        ├── [java]
+            └── [sit]
+                └── [int202]
+                    └── [classic_models]
+                        ├── HelloServlet.java
+                        ├── [controller]
+                            ├── OfficeDeleteServlet.java
+                            ├── OfficeInsertServlet.java
+                            ├── OfficeManagementServlet.java
+                            ├── OfficeSettingsServlets.java
+                            ├── OfficeUpdateServlet.java
+                            └── ProductListServlet.java
+                        ├── [model]
+                            ├── Employee.java
+                            ├── Environment.java
+                            ├── Office.java
+                            └── Product.java
+                        ├── [repository]
+                            ├── OfficeRepository.java
+                            └── ProductRepository.java
+                        └── [util]
+                            └── EntityManagerBuilder.java
+        ├── [resources]
+            └── [META-INF]
+                └── persistence.xml
+        └── [webapp]
+            ├── [WEB-INF]
+                └── web.xml
+            ├── add-office.jsp
+            ├── index.jsp
+            ├── office-management.jsp
+            ├── product-list.jsp
+            └── settings-office.jsp
