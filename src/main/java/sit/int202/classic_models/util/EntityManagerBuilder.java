@@ -1,9 +1,8 @@
-package sit.int202.classic_models.repositories;
+package sit.int202.classic_models.util;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import sit.int202.classic_models.entities.Environment;
 
 public class EntityManagerBuilder {
     private final static EntityManagerFactory emf =

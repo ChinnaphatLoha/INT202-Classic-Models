@@ -1,10 +1,12 @@
-package sit.int202.classic_models.controllers;
+package sit.int202.classic_models.controller;
 
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
-import sit.int202.classic_models.entities.Product;
-import sit.int202.classic_models.repositories.ProductRepository;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import sit.int202.classic_models.model.Product;
+import sit.int202.classic_models.repository.ProductRepository;
 
 import java.io.IOException;
 import java.util.List;
@@ -24,11 +26,7 @@ public class ProductListServlet extends HttpServlet {
         request.setAttribute("page", page);
         request.setAttribute("pageSize", pageSize);
         request.setAttribute("itemCount", productRepository.countAll());
+        productRepository.close();
         getServletContext().getRequestDispatcher("/product-list.jsp").forward(request, response);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
     }
 }

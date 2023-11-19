@@ -1,14 +1,14 @@
-package sit.int202.classic_models.entities;
+package sit.int202.classic_models.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
+
 @Getter
 @Setter
 @NamedQueries({
-        @NamedQuery(name = "Product.FIND_ALL", query = "SELECT p FROM Product p"),
-        @NamedQuery(name = "Product.COUNT", query = "SELECT count(p) as count FROM Product p")
+        @NamedQuery(name = "PRODUCT.FIND_ALL", query = "SELECT p FROM Product p"),
+        @NamedQuery(name = "PRODUCT.COUNT", query = "SELECT count(p) as count FROM Product p")
 })
 @Table(name = "products", indexes = {
         @Index(name = "productLine", columnList = "productLine")

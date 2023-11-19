@@ -3,8 +3,8 @@ package sit.int202.classic_models;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import sit.int202.classic_models.entities.Employee;
-import sit.int202.classic_models.entities.Office;
+import sit.int202.classic_models.model.Employee;
+import sit.int202.classic_models.model.Office;
 
 import java.util.List;
 import java.util.Scanner;

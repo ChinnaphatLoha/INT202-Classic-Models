@@ -1,4 +1,4 @@
-package sit.int202.classic_models.entities;
+package sit.int202.classic_models.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -1,8 +1,11 @@
 package sit.int202.classic_models;
 
-import jakarta.persistence.*;
-import sit.int202.classic_models.entities.Employee;
-import sit.int202.classic_models.entities.Environment;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import jakarta.persistence.Query;
+import sit.int202.classic_models.model.Employee;
+import sit.int202.classic_models.model.Environment;
 
 import java.util.List;
 import java.util.Scanner;
